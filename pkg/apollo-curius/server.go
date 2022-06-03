@@ -9,8 +9,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/amirgamil/curius-search/pkg/apollo-curius/backend"
-	"github.com/amirgamil/curius-search/pkg/apollo-curius/schema"
+	"github.com/straightupjac/curius-search/pkg/apollo-curius/backend"
+	"github.com/straightupjac/curius-search/pkg/apollo-curius/schema"
 	"github.com/gorilla/mux"
 	"github.com/joho/godotenv"
 	jsoniter "github.com/json-iterator/go"

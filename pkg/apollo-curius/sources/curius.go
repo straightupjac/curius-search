@@ -7,8 +7,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/amirgamil/curius-search/pkg/apollo-curius/schema"
-	"github.com/amirgamil/curius-search/pkg/curius"
+	"github.com/straightupjac/curius-search/pkg/apollo-curius/schema"
+	"github.com/straightupjac/curius-search/pkg/curius"
 )
 
 const curiusPath = "../curius/data.json"

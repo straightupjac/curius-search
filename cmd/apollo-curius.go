@@ -5,9 +5,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/amirgamil/curius-search/pkg/apollo-curius"
-	"github.com/amirgamil/curius-search/pkg/apollo-curius/backend"
-	"github.com/amirgamil/curius-search/pkg/curius"
+	"github.com/straightupjac/curius-search/pkg/apollo-curius"
+	"github.com/straightupjac/curius-search/pkg/apollo-curius/backend"
+	"github.com/straightupjac/curius-search/pkg/curius"
 )
 
 func main() {

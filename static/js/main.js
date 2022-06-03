@@ -8,7 +8,7 @@ const debounce = (fn, delay) => {
     };
 };
 
-class Data extends Atom {}
+class Data extends Atom { }
 
 //takes a string of content and returns
 //a text with HTML tags injected for key query words
@@ -262,7 +262,7 @@ class SearchEngine extends Component {
             <input onkeydown=${this.handleKeydown} oninput=${this.handleInput} onkeyup=${this.loadSearchResults} value=${this.searchInput} placeholder="Search my curius footprint"/>
             <p class="time">${this.searchInput ? "About " + this.searchData.size + " results (" + time + "ms)" : html`<p>To navigate with your keyboard: <strong>Arrow keys</strong> move up and down results, <strong>Enter</strong> opens the result in detail, <strong>Escape</strong>
             closes the detail view</p>`}</p>
-            ${this.loading ? html`<p>loading...</p>` : this.searchResultsList.node} 
+            ${this.loading ? html`<p>loading...</p>` : this.searchResultsList.node}
         </div>`;
     }
 }
@@ -271,8 +271,8 @@ class SearchEngine extends Component {
 const about = html`<div class="colWrapper">
     <h1>About</h1>
     <p>
-        Apollo-curius is a search engine based off <a href="https://github.com/amirgamil/apollo">Apollo</a> which
-        indexes my <a href="https://curius.app/amir-gamil">Curius</a> data.
+        Apollo-curius is a search engine based off <a href="https://github.com/amir-gamil/apollo">Apollo</a> which
+        indexes my <a href="https://curius.app/jaclyn-chan">Curius</a> data.
     </p>
 </div>`;
 
@@ -319,7 +319,7 @@ class App extends Component {
             <nav>
                 <div class="topNav">
                     <h5 class="titleNav"><strong class="cover">Apollo-Curius</strong></h5>
-                    <h5 class="welcomeNav">Amir's Digital 👣</h5>
+                    <h5 class="welcomeNav">straightupjac's Digital 👣</h5>
                     <div class="navSubar">
                         <button title="Home" onclick=${() => this.router.navigate("/")}>
                             <img src="static/img/home.png" />
@@ -333,18 +333,17 @@ class App extends Component {
             </nav>
             <div class="content">
                 ${() => {
-                    switch (this.route) {
-                        case "/about":
-                            return about;
-                        default:
-                            return this.engine.node;
-                    }
-                }}
+                switch (this.route) {
+                    case "/about":
+                        return about;
+                    default:
+                        return this.engine.node;
+                }
+            }}
             </div>
             <footer>
-                Built with <a href="https://github.com/amirgamil/poseidon">Poseidon</a> by
-                <a href="https://amirbolous.com/">Amir</a> and
-                <a href="https://github.com/amirgamil/curius-search">open source</a> on GitHub
+                Built with <a href="https://github.com/amir-gamil/poseidon">Poseidon</a> and
+                <a href="https://github.com/amir-gamil/curius-search">open source</a> on GitHub
             </footer>
         </main>`;
     }

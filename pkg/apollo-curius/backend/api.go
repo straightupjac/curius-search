@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/amirgamil/curius-search/pkg/apollo-curius/schema"
-	"github.com/amirgamil/curius-search/pkg/apollo-curius/sources"
+	"github.com/straightupjac/curius-search/pkg/apollo-curius/schema"
+	"github.com/straightupjac/curius-search/pkg/apollo-curius/sources"
 	jsoniter "github.com/json-iterator/go"
 )
 

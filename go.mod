@@ -1,4 +1,4 @@
-module github.com/amirgamil/curius-search
+module github.com/straightupjac/curius-search
 
 go 1.14
 

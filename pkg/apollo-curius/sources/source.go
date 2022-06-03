@@ -1,7 +1,7 @@
 package sources
 
 import (
-	"github.com/amirgamil/curius-search/pkg/apollo-curius/schema"
+	"github.com/straightupjac/curius-search/pkg/apollo-curius/schema"
 )
 
 var sources map[string]schema.Record
